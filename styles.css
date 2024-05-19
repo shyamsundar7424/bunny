@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  list-style: none;
+  text-decoration: none;
+
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-image:linear-gradient(90deg, rgb(227, 227, 243),rgb(164, 172, 169),rgb(145, 145, 170),rgb(153, 153, 248));
+  
+}
+header .navbox{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+header .navbox .logo{
+  display: flex;
+  margin-right: auto;
+  padding: 10px 20px;
+  font: 1.5em sans-serif;
+  
+}
+.navicon .navi ul{
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  cursor: auto;
+}
+
+.navicon .navi ul li{
+  margin: 10px;
+  padding: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5em;
+  font-weight: 540;
+}
+
+.navicon .navi ul li a{
+  color:rgb(1, 0, 19);
+}
+
+.navicon .navi ul li a:hover{
+  color:rgb(6, 3, 64);
+  font-weight: 600;
+  text-underline-offset: 10px;
+  background-color: rgb(240, 222, 145);
+  border-radius: 8px;  
+  transition: ease-in-out;
+  transition-delay: 0.5s;
+}
+
+  .container {
+    max-width: 600px;
+    max-height: max-content;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .container .mainbox{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+    background:linear-gradient(rgb(199, 199, 250),rgb(230, 242, 246),rgb(244, 246, 194));
+    border-radius: 18px;
+  }
+
+
+  .container .mainbox  img{
+   width: 10em;
+   height: auto;
+   border-radius: 50%;
+  }
+
+  .container h1{
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 50px ,30px;
+  }
+
+
+  .wallet {
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+
+
+  .wallet p{
+    font-size: 2em;
+  }
+
+  .container .levelbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .levelbox .levelboxs{
+    padding: 0px 10px;
+    margin: 20px;
+    border: 2px solid rgb(2, 1, 21);
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 10em;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .container .levelbox .levelboxs:hover{
+    background-color: rgb(173, 244, 245);
+  }
+  .levelboxs p{
+    font-size: 1.5em;
+    padding: 12px;
+  }
+
+  .levelboxs p a{
+    color: #0d094f;
+    font-weight: 400;
+  }
+  .levelboxs p a:hover{
+    color: #000;
+    font-weight: 500;
+  }
+  .level{
+    border: 2px solid rgb(2, 1, 21);
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 10em;
+    border-radius: 10px;
+  }
+  .level p{
+    font-size: 2em;
+    padding: 12px;
+  }
+  
+  button {
+    background-color: #0d0431;
+    padding: 10px 20px;
+    color: rgb(237, 237, 241);
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  h3{
+    font-size: 4em;
+  }
+  button img{
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    right: 14px;
+    bottom:5px;
+    display: none;
+  }
+  
+  button:hover {
+    img{
+      display: block;
+    }
+    h3{
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .navicon .navi ul li{
+      margin: 5px;
+      padding: auto;
+      font-size: 1.1em;
+      font-weight: 4250;
+    }
+    
+    header .navbox .logo{
+      padding: 5px 10px;
+      font: 1em sans-serif;
+      
+    }
+    .container .mainbox{
+      display:inline;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {
+    .navicon .navi ul li{
+      margin: 5px;
+      padding: auto;
+      font-size: 1.3em;
+      font-weight: 400;
+    }
+    
+    header .navbox .logo{
+      padding: 5px 10px;
+      font: 1em sans-serif;
+      
+    }
+    .navicon .navi ul{
+      padding: 10px 10px;
+    }
+    
+    .container .mainbox{
+      display:inline;
+    } 
+
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .navicon .navi ul li{
+      margin: 3px;
+      padding-top: 10px;
+      font-size: 1em;
+      font-weight: 250;
+    }
+    
+    header .navbox .logo{
+      padding: 5px 8px;
+      font: 0.8em sans-serif;
+      
+    }
+    .navicon .navi ul{
+      padding: 8px 10px;
+    }
+
+    .container h1{
+      font-size: 2em;
+      margin: 50px ,30px;
+    }
+
+    .container .levelbox .levelboxs{
+      height: 4em;
+      width: 6em;
+    }
+    
+    .levelboxs p{
+      font-size: 1.2em;
+      padding: 8px;
+    }
+
+    .container .mainbox{
+      display:inline;
+    }
+  }
+  
